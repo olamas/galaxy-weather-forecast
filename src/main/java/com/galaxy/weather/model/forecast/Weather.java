@@ -16,6 +16,13 @@ public abstract class Weather {
 	
 	public abstract String getStatus();
 	
+	public Forecast getForecast(){
+		Forecast forecast=new Forecast(); 
+		forecast.setDay(this.getDay());
+		forecast.setWeather(this.getStatus());		
+		return forecast;
+	}
+	
 	public int getDay() {
 		return this.day;
 	}

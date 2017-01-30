@@ -26,7 +26,6 @@ public class WeatherProcessor {
 		} else if (isRainPeriod(planets)) {			
 			Rain rain = new Rain(day);
 			double amount = amountCalculate(planets);
-			//System.out.println(day + " es lluvia " + planets.get(0).getOrbitPosition() + " - "+ planets.get(1).getOrbitPosition() + " - " + planets.get(2).getOrbitPosition());
 			rain.setValue(amount);
 			return rain;
 		} else {

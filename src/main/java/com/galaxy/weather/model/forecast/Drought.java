@@ -10,7 +10,5 @@ public class Drought extends Weather {
 
 	public String getStatus() {
 		return STATUS_DROUGHT;
-	}
-
-	
+	}	
 }
